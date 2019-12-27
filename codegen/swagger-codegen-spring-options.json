@@ -1,0 +1,5 @@
+  
+{
+    "basePackage":"com.pivotalwebservices.customerservice",
+    "configPackage":"com.pivotalwebservices.customerservice.config"
+}
