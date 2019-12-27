@@ -3,10 +3,10 @@
 
 CODEGEN_DIR="$(dirname "$0")/."
 
-CODEGEN_JAR=${CODEGEN_DIR}/swagger-codegen-cli.jar
-CODEGEN_SWAGGER=${CODEGEN_DIR}/../swagger.json
+CODEGEN_JAR=${CODEGEN_DIR}/swagger-codegen-cli-3.0.11.jar
+CODEGEN_SWAGGER=${CODEGEN_DIR}/../swagger.yml
 CODEGEN_CONFIG=${CODEGEN_DIR}/swagger-codegen-spring-options.json
-CODEGEN_OUT_DIR=${CODEGEN_DIR}/../../customer-services
+CODEGEN_OUT_DIR=${CODEGEN_DIR}/../codegen_output
 
 rm -f ${CODEGEN_JAR}
 curl  http://central.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.11/swagger-codegen-cli-3.0.11.jar -O ${CODEGEN_JAR}
